@@ -1,0 +1,154 @@
+
+body{
+	background-color: #eee;
+    height:auto;
+	font-family:Georgia,serif,helevita;
+
+
+}
+
+h1{
+	font-weight:400;
+	font-size:1.9rem;
+	text-transform:uppercase;
+	margin:0;
+	padding-bottom:8px;
+}
+h2{
+		padding-bottom:4px;
+	font-weight:400;
+	font-size:20px;
+	margin:0;
+}
+img{
+	
+	
+
+	display:block;
+	width:100%;
+	height:250px;
+   animation-name: slide;
+   animation-duration:1s;
+}
+
+
+main{
+margin:auto;
+
+max-width:900px; 
+
+box-shadow: 40px 0px 100px grey,-20px 0px 100px grey;
+
+}
+
+#landing{
+	background-color: #fff;
+}
+
+#landing-text {
+	display:flex;
+	flex:0 1 40vw;
+ 	height:50vh;
+   justify-content:center; 
+  align-items:center;	
+   	text-align: center;
+}
+
+#landing h2{
+	color:#888;
+}
+
+.btn{
+	display:inline-block;
+	border:2px grey solid;
+	border-radius:50px;
+	margin-top:4px;
+	padding:0.5rem 2rem;
+	color:#333;
+	text-decoration:none;
+
+	transition:all 300ms linear;
+}
+
+
+.btn:hover{
+	background:#f4f4f4;
+	color:Dodgerblue;
+	font-size: 1.1rem;
+}
+#landing-images{
+	background :url('black hole.jpg') no-repeat -10px 0px;
+	
+	background-size:cover;
+	height:50vh;
+	flex:0 1 60vw;
+	margin:0;
+
+}
+#header{
+	padding: 20px;
+	text-align:center;
+	color:#fff;
+	background:#333;
+}
+
+#header h2{
+	border-right: 2px dotted black;
+	border-left: 2px dotted black;
+	display:inline;
+	padding:0px 20px;
+	z-index: 10;
+
+}
+
+#caption p{
+	font-size:14px;
+}
+
+#caption{
+	padding:0.8rem;
+	text-align:center;
+
+}
+footer{
+	padding:10px;
+	text-align:center;
+	color:#fff;
+	background:#333;
+	margin-top:20px;
+}
+
+footer h3{
+	font-size:2.6rem;
+	
+}
+
+@media(min-width:500px){
+	#landing{
+		display:flex;
+		height:100%;
+
+
+	}
+ #landing-text{
+ 	height:100vh;
+ }
+
+ #landing-images{
+ 	background :url("blackhole.jpg") no-repeat -100px 0px;
+
+ 	height:100vh;
+ }
+
+
+ img{
+ 	height:400px;
+ }
+}
+
+@media(min-width:700px){
+	.btn{
+		padding:1rem 3rem;
+	}
+
+}
